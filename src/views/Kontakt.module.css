@@ -1,0 +1,197 @@
+
+.kontaktContainer {
+  padding: 150px 5vw;
+  background-color: #f6f2de;
+  min-height: 100vh;
+  width: 100vw;
+  font-family: "MyFont", sans-serif;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bgFlowerLeft,
+.bgFlowerRight {
+  content: "";
+  position: fixed;
+  width: 70vh;
+  height: 70vh;
+  opacity: 0.15;
+  z-index: 0;
+  pointer-events: none;
+
+  mask-image: url("../assets/hvidlogo.webp");
+  -webkit-mask-image: url("../assets/hvidlogo.webp");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+
+  background: #ab531d;
+  animation: slowRotate 50s linear infinite;
+}
+
+.bgFlowerLeft {
+  top: 5%;
+  left: -10%;
+}
+
+.bgFlowerRight {
+  top: 40%;
+  right: -12%;
+}
+
+@keyframes slowRotate {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+
+.contactWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  position: relative;
+  z-index: 2;
+}
+
+.infoBoxes {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 40%;
+}
+
+.box {
+  background: #fffdf1;
+  border-left: 12px solid #82050f;
+  padding: 25px 30px;
+  border-radius: 10px;
+  color: #2c2525;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.box:hover {
+  background: #ffecc2;
+  transform: translateY(-4px);
+}
+
+.kontaktContainer h1 {
+  font-size: 3rem;
+  color: #2c2525;
+  margin-bottom: 80px;
+    margin-top: 50px;
+}
+
+.box p {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+
+.form {
+  background: #fffdf1;
+  width: 50%;
+  padding: 40px 35px;
+  border-radius: 12px;
+  border-top: 10px solid #820b0f;
+  box-shadow: 0px 15px 30px rgba(0,0,0,0.1);
+}
+
+.brev, .mobil, .lokation{
+    height: 30px;
+
+}
+
+.label {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #2c2525;
+  display: block;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 2px solid #d4cdbc;
+  background: #fffdf9;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: #82050f;
+  box-shadow: 0 0 0 4px rgba(171,83,29,0.2);
+  outline: none;
+}
+
+
+.button {
+  width: 100%;
+  padding: 14px;
+  font-size: 1.2rem;
+  background-color: #82050f;
+  color: #fffdf1;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.button:hover {
+  background-color: #6b0d11;
+  transform: translateY(-3px);
+}
+
+.bgFlowerLeft,
+.bgFlowerRight {
+  content: "";
+  position: fixed;
+  width: 40vw;
+  height: 40vw;
+  opacity: 0.15;
+  z-index: 0;
+  pointer-events: none;
+
+  mask-image: url("../assets/hvidlogo.webp");
+  -webkit-mask-image: url("../assets/hvidlogo.webp");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+
+  background: #ab531d;
+  animation: slowRotate 50s linear infinite;
+}
+
+.bgFlowerLeft {
+  top: 5%;
+  left: -10%;
+}
+
+.bgFlowerRight {
+  top: 40%;
+  right: -12%;
+}
+
+@media (max-width: 900px) {
+  .contactWrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .infoBoxes, .form {
+    width: 100%;
+  }
+
+  .box h1 {
+    text-align: center;
+  }
+}
+
+
+

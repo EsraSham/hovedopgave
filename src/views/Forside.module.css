@@ -1,0 +1,514 @@
+.imageWrapperMeeting {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #3a2d1d;
+  background-size: cover;
+  background-position: center;
+
+  z-index: -2;
+}
+
+
+.imageWrapperMeeting.lazyLoaded {
+  background-image: url("../assets/langbord.webp");
+  transition: opacity 0.6s ease;
+}
+
+
+a {
+text-decoration: none;
+}
+
+.gaard {
+       height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    object-position: center;
+}
+
+.langbord {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -2;
+    object-fit: cover;
+    object-position: center;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; 
+}
+
+
+.textWrapper1 {
+    position: absolute;
+  top: 60%;
+  left: 20%;
+  transform: translateY(-50%);
+  background-color: rgba(171, 83, 29, 0.9);
+  padding: 30px;
+  width: 500px;
+  color: #f6f2de;
+  font-family: "MyFont", sans-serif;
+  border-radius: 10px;
+}
+
+
+.textWrapper1 h1{
+    color: #f6f2de;
+    font-family: "MyFont", sans-serif;
+}
+
+.textWrapper1 p{
+    color: #f6f2de;
+    font-family: "MyFont", sans-serif;
+    font-size: 1.1rem;
+}
+
+.readMoreBtn {
+color: #f6f2de;
+font-family:"MyFont", sans-serif;
+font-size: 1.2rem;
+transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.readMoreBtn:hover {
+ color: #2c2525;
+}
+
+.textWrapper12 {
+    background-color: #f6f2de;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.textWrapper123 {
+    background-color: #f6f2de;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.textWrapper12Inner, .textWrapper123Inner {
+    background-color: #ab531d;
+    width: 80vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textWrapper123Inner {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    flex-direction: column;
+    background-color: #ab531d;
+}
+
+.textWrapper12Inner {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    flex-direction: column;
+}
+
+
+.textWrapper12 p, .textWrapper123 p{
+    color: #f6f2de;
+    font-family: "MyFont", sans-serif;
+    font-size: 1.7rem;
+    width: 40vw;
+}
+
+.readMoreBtn12 {
+  position: relative;
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #f6f2de;
+  z-index: 1;
+  margin-top: 20px;
+  font-family: "MyFont", sans-serif;
+}
+
+.textWrapper12Inner,
+.textWrapper123Inner {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+
+.bgFlowerTW12, .bgFlowerTW13,
+.bgFlowerTW123, .bgFlowerTW1234 {
+  position: absolute;
+  width: 35vw;
+  height: 35vw;
+  opacity: 0.2;
+  pointer-events: none;
+  z-index: 0;
+
+  background: #f6f2de;
+
+  mask-image: url("../assets/hvidlogo.webp");
+  -webkit-mask-image: url("../assets/hvidlogo.webp");
+  mask-size: contain;
+  mask-position: center;
+  mask-repeat: no-repeat;
+
+  animation: slowRotate 40s linear infinite;
+}
+
+.bgFlowerTW12 {
+  top: -40%;
+  left: -20%;
+}
+
+.bgFlowerTW13 {
+  top: 10%;
+  left: 60%;
+}
+
+.bgFlowerTW123 {
+  bottom: -20%;
+  right: -20%;
+}
+
+.bgFlowerTW1234 {
+  bottom: -50%;
+  right: 60%;
+}
+
+.borderContainer {
+    width: 100vw;
+    height: 50vh;
+    border: 10px solid #f6f2de;
+}
+
+.textWrapper2 {
+    background-color: #f6f2de;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.textWrapper2Inner{
+    background-color: #ab531d;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 90vw;
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px;
+}
+
+
+.textWrapper2 p{
+    color: #f6f2de;
+    font-family: "MyFont", sans-serif;
+    font-size: 2rem;
+    width: 40vw;
+}
+
+.readMoreBtn1 {
+  position: relative;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #f6f2de;
+  z-index: 1;
+  margin-left: 13vw;
+  font-family: "MyFont", sans-serif;
+}
+
+
+.readMoreBtn2 {
+  position: relative;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #f6f2de;
+  z-index: 1;
+  margin-left: 13vw;
+  text-decoration: none;
+  font-family: "MyFont", sans-serif;
+}
+
+
+.team {
+  height: 70vh;
+  position: relative;
+  z-index: 2;
+}
+
+
+.teamImgWrapper {
+  width: 450px;
+  height: 450px;
+  margin: 0 auto 10px auto;
+  position: relative;
+
+  mask-image: url("../assets/hvidlogo.webp");
+  -webkit-mask-image: url("../assets/hvidlogo.webp");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.teamImg {
+  width: 120%;
+  height: 500px;
+  object-fit: cover;
+  z-index: 2;
+}
+
+
+.textWrapper2 {
+  position: relative; 
+  overflow: hidden;
+  z-index: 1;
+}
+
+.bgFlowerLeft {
+  position: absolute;
+  width: 45vw;
+  height: 45vw;
+  opacity: 0.2;
+  pointer-events: none;
+  z-index: 0;
+  background: #f6f2de;
+  mask-image: url("../assets/hvidlogo.webp");
+  -webkit-mask-image: url("../assets/hvidlogo.webp");
+  mask-size: contain;
+  mask-position: center;
+  mask-repeat: no-repeat;
+
+  animation: slowRotate 40s linear infinite;
+}
+
+.bgFlowerLeft {
+  top: 20%;
+  left: 0%;
+}
+
+@keyframes slowRotate {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+
+@media (max-width: 1000px) {
+
+  .langbord {
+
+    width: 100vw;
+    object-fit: cover;
+    object-position: center;
+  }
+
+    .gaard {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .textWrapper1 p {
+    font-size: 1rem;
+    font-family: "MyFont";
+  }
+
+  .teamImgWrapper {
+    width: 350px;
+    height: 350px;
+  }
+
+  .teamImg {
+    height: 400px;
+  }
+
+  .textWrapper2 p {
+    font-size: 2rem;
+    width: 60vw;
+    margin: 0;
+    padding: 0 5vw;
+  }
+
+  .readMoreBtn2 {
+    margin-left: 5vw;
+  }
+
+
+  .textWrapper1 {
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85vw;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .textWrapper1 h1 {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+  }
+
+  .textWrapper1 p {
+    font-size: 0.8rem;
+    font-family: "MyFont";
+  }
+
+
+  
+  .textWrapper12 {
+    height: auto;
+    padding: 60px 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .textWrapper12Inner {
+    width: 95vw;
+    margin-right: 5vw;
+    height: auto;
+    padding: 40px 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .textWrapper12Inner p {
+    width: 100%;
+    font-size: 1.3rem;
+  }
+
+
+  .bgFlowerTW12,
+  .bgFlowerTW13 {
+    width: 45vw;
+    height: 45vw;
+  }
+
+  .bgFlowerTW12 {
+    top: -25%;
+    left: -20%;
+  }
+
+  .bgFlowerTW13 {
+    top: 20%;
+    left: 50%;
+  }
+
+
+  .textWrapper123 {
+    height: auto;
+    padding: 60px 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .textWrapper123Inner {
+    width: 90vw;
+    height: auto;
+    margin-left: 10vw;
+    padding: 40px 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .textWrapper123Inner p {
+    width: 100%;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+
+  .bgFlowerTW123,
+  .bgFlowerTW1234 {
+    width: 45vw;
+    height: 45vw;
+  }
+
+  .bgFlowerTW123 {
+    bottom: -25%;
+    right: -10%;
+  }
+
+  .bgFlowerTW1234 {
+    bottom: 15%;
+    right: 50%;
+  }
+
+
+  .borderContainer {
+    height: 20vh;
+    border-width: 6px;
+  }
+
+
+  .textWrapper2 {
+    flex-direction: column;
+    height: auto;
+    padding: 80px 0;
+  }
+
+  .textWrapper2Inner {
+    width: 92vw;
+    height: auto;
+    padding: 40px 20px;
+    border-radius: 16px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .textWrapper2Inner p {
+    width: 100%;
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+  }
+
+
+  .readMoreBtn2 {
+    margin: 0 auto;
+  }
+
+
+  .teamImgWrapper {
+    width: 260px;
+    height: 260px;
+    margin-top: 40px;
+  }
+
+  .teamImg {
+    height: 300px;
+  }
+
+
+  .bgFlowerLeft {
+    width: 65vw;
+    height: 65vw;
+    top: 0%;
+    left: -10%;
+  }
+}
+
+
+
+

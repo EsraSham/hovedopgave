@@ -1,0 +1,122 @@
+.page {
+  padding: 150px 5vw;
+  background-color: #f6f2de;
+  min-height: 100vh;
+  width: 100vw;
+  font-family: "MyFont", sans-serif;
+  position: relative;
+}
+
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  color: #2c2525;
+  margin-bottom: 60px;
+  margin-top: 50px;
+}
+
+
+.bgFlowerLeft,
+.bgFlowerRight {
+  content: "";
+  position: fixed;
+  width: 40vw;
+  height: 40vw;
+  opacity: 0.25;
+  z-index: 0;
+  pointer-events: none;
+
+  mask-image: url("../assets/hvidlogo.webp");
+  -webkit-mask-image: url("../assets/hvidlogo.webp");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+
+  background: #ab531d;
+  animation: slowRotate 50s linear infinite;
+}
+
+.bgFlowerLeft {
+  top: 10%;
+  left: -10%;
+}
+
+.bgFlowerRight {
+  top: 40%;
+  right: -12%;
+}
+
+@keyframes slowRotate {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+
+.menuSection {
+  margin-bottom: 90px;
+  z-index: 2;
+  position: relative;
+}
+
+.sectionTitle {
+  font-size: 2.2rem;
+  color: #2c2525;
+  margin-bottom: 30px;
+  border-bottom: 4px solid #c08931;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+
+.menuGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.menuItem {
+  background-color: #fffdf1;
+  border-left: 10px solid #c08931;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.menuItem:hover {
+  transform: translateY(-5px);
+  background: #ffecc2;
+}
+
+.menuItem h3 {
+  font-size: 1.4rem;
+  color: #2c2525;
+  margin-bottom: 5px;
+}
+
+.menuItem p {
+  color: #444;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #6b0d11;
+}
+
+
+@media (max-width: 900px) {
+    .title{
+        margin-top: none;
+    }
+
+    .page {
+  padding: 100px 5vw;
+}
+
+
+}

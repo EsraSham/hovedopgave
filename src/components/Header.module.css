@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px 50px 50px;
+  align-items: center;
+}
+
+
+.logo {
+  width: 150px;
+}
+
+.logoLink {
+  z-index: 1001;
+}
+
+
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.links a {
+  position: relative;
+  color: #f6f2de;
+  text-decoration: none;
+  font-family: "MyFont", sans-serif;
+  font-weight: 800;
+  font-size: 1.2rem;
+  z-index: 1;
+  width: 155px;
+  height: 155px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+
+.links a::before {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: -20%;
+  width: 140%;
+  height: 140%;
+  background: #820f13;
+
+  mask-image: url("../assets/hvidlogo.webp");
+  -webkit-mask-image: url("../assets/hvidlogo.webp");
+  mask-size: 60%;
+  mask-repeat: no-repeat;
+  mask-position: center;
+
+  z-index: -1;
+  opacity: 1;
+  transition: background 0.3s ease;
+}
+
+.links a:hover::before {
+  background: #520a0e;
+  animation: spinFlower 4s linear infinite;
+}
+
+
+@keyframes spinFlower {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.burger span {
+  width: 30px;
+  height: 4px;
+  background: #2c2525;
+  border-radius: 10px;
+}
+
+
+@media (max-width: 1000px) {
+
+.header {
+        padding-top: 10px;
+    }
+
+.nav {
+    padding: 20px 30px;
+  }
+
+.logo {
+    width: 100px;
+  }
+
+
+.burger {
+    display: flex;
+  }
+
+.links a::before {
+    opacity: 0;
+}
+
+
+  .links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background: #f6f2de;
+    opacity: 0.95;
+    transform: translateY(-200%);
+    transition: transform 0.4s ease;
+    z-index: 1000;
+    padding: 100px 0;
+  }
+
+
+  .links.open {
+    transform: translateY(0);
+  }
+
+  .links a:hover {
+    transform: translateY(-10px);
+  }
+
+  .links a{
+    transition: transform 0.3s ease, background 0.3s ease;
+    padding: 20px;
+    font-size: 1.7rem;
+    color: #2c2525;
+    border-bottom: 2px solid #2c2525;
+    border-top: 2px solid #2c2525;
+    width: 100vw;
+  }
+
+
+  .links a::before {
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    mask-size: 50%;
+  }
+}
